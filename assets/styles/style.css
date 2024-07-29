@@ -1,0 +1,113 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0 auto;
+}
+html, body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background-color: #4b4b4b;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+  margin: 0 auto;
+
+}
+#root, #__next {
+  isolation: isolate;
+}
+
+a {
+  margin: 0;
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 25px;
+  max-width: 1024px;
+}
+
+#ben {
+  width: 250px;
+  border: 1px solid #2c2c2c;
+  border-radius: 25%;
+  box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.5);
+}
+
+h3{
+  color: white;
+  font-size: 25px;
+  width: 100%;
+  text-align: center;
+  font-family: "Noto Sans Symbols", sans-serif;
+}
+
+h4 {
+  color: #dddcdc;
+  font-size: 20px;
+  background-color: #00447c;
+  padding: 2px 10px;
+  text-align: center;
+  max-width: 750px;
+  font-family: "Noto Sans Symbols", sans-serif;
+}
+
+.links{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.linksBio {
+  width: 350px;
+  border: 1px solid #2196F3;
+  font-size: 30px;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  a {
+    padding: 0 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    color: #f1f1f1;
+    margin-left: 10px;
+  }
+  p {
+    margin: 0;
+    font-family: "Cairo Play", sans-serif;
+  }
+  svg{
+    width: 30px;
+    height: 30px;
+    margin: 0;
+  }
+  &:hover {
+    background-color: #2196F3;
+    border: 1px solid #f1f1f1;
+    box-shadow: 0px 0px 20px 5px rgba(150, 150, 150, 0.5);
+  }
+}
+
+
+footer{
+  color: #ffffff62;
+  font-size: 20px;
+  margin-top: 50px;
+}
